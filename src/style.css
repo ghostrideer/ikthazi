@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+body {
+    font-family: 'Tilt Neon', cursive;
+    background: linear-gradient(-50deg, #2A2F4F, #917FB3, #E5BEEC, #212A3E);
+    background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100%;
+	margin: 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transform-origin: left;
+	-moz-transform-origin: left;
+	-o-transform-origin: left;
+	transform-origin: left;
+}
+
+nav{
+	background: rgba(239, 232, 232, 0.08);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.2px);
+	-webkit-backdrop-filter: blur(4.2px);
+	font-family: 'Tilt Neon', cursive;
+}
+
+.termekek{
+	text-align: center;
+	font-size: 2rem;
+	padding: 10px;
+	font-family: 'Tilt Neon', cursive;
+	padding-top: 5rem;
+}
+
+.vonal{
+	width: 80%;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid white;
+}
+
+.switchesstyle {
+	font-family: 'Tilt Neon', cursive;
+}
+
+.grid{
+	display: flex;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	gap:1rem ;
+	grid-auto-rows: 50px;
+	display: grid;
+	margin-right:100px;
+	margin-left: 100px;
+}
+
+.box{
+	padding-top:10px ;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 10px;
+	border: 1px solid gray;
+	border-end-end-radius: 20px;
+	border-end-start-radius: 20px;
+	border-start-end-radius: 20px;
+	border-start-start-radius: 20px;
+}
+
+h3{
+	text-align: center;
+	font-size: 30px ;
+	margin: 0%;
+	margin-top: 10px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+	
+}
+
+.content{
+	width: 20%;
+	margin: 15px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: .4s;
+	background: rgba(167, 158, 158, 0.21);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	font-family: 'Tilt Neon', cursive;
+}
+
+.content:hover{
+	box-shadow: 1 3px 6px rgba(0, 0, 0, 0.26),
+	rgba(0, 0, 0, 0.23);
+	transform: translate(0px, -8px);
+}
+
+.kepCard{
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+
+p{
+	text-align: center;
+	color: black;
+	padding-top: 0%;
+}
+
+h6{
+	font-size: 26px;
+	text-align: center;
+	color: black;
+	margin: 0;
+}
+
+button{
+	text-align: center;
+	font-size: 24px;
+	color: black;
+	width: 100%;
+	padding: 15px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	
+}
+
+.buy-1{
+	background: rgba(167, 158, 158, 0.21);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	color: black;
+}
+
+
+.success-popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: green;
+	color: white;
+	font-size: 18px;
+	border-radius: 5px;
+	z-index: 9999;
+	opacity: 0;
+	animation: fade-in-out 3s ease-in-out;
+  }
+
+  @keyframes fade-in-out {
+	0% {
+	  opacity: 0;
+	}
+	10% {
+	  opacity: 1;
+	}
+	90% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
